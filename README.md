@@ -26,3 +26,5 @@ todo-saskara/
 ├── style.css
 └── README.md
 ```
+## Hasil
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/16d4a282-46b0-40a9-b884-cec5c0480862" />
