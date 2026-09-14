@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO SASKARA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">RUANG KERJA HARIAN</p>
+                <h1 id="app-title">TODO SASKARA</h1>
+                <p class="subtitle">Satu langkah kecil untuk hari yang lebih terarah.</p>
+            </div>
+            <div class="date-badge" aria-label="Tanggal aplikasi">14 SEP 2026</div>
+        </header>
+
+        <div class="content-layout">
+            <main class="todo-card" aria-labelledby="list-title">
+                <div class="list-heading">
+                    <div>
+                        <p class="panel-label">DAFTAR UTAMA</p>
+                        <h2 id="list-title">Tugas hari ini</h2>
+                    </div>
+                    <span>3 tugas</span>
+                </div>
+
+                <ul class="task-list">
+                    <li class="task-item">
+                        <input class="task-check" type="checkbox" id="task-one">
+                        <label class="task-text" for="task-one">Menyelesaikan tugas Pemrograman Web</label>
+                    </li>
+                    <li class="task-item">
+                        <input class="task-check" type="checkbox" id="task-two" checked>
+                        <label class="task-text" for="task-two">Merapikan catatan perkuliahan</label>
+                    </li>
+                    <li class="task-item">
+                        <input class="task-check" type="checkbox" id="task-three">
+                        <label class="task-text" for="task-three">Membaca materi untuk besok</label>
+                    </li>
+                </ul>
+            </main>
+
+            <aside class="side-panel" aria-label="Panel detail dan tambah tugas">
+                <section class="detail-card">
+                    <p class="panel-label">TASK DETAILS</p>
+                    <h2>Menyelesaikan tugas Pemrograman Web</h2>
+                    <p><strong>Status:</strong> In progress</p>
+                    <p><strong>Due:</strong> Today</p>
+                    <p class="detail-description">Menyusun halaman Todo List dengan HTML semantic dan CSS eksternal.</p>
+                </section>
+
+                <section class="form-card" aria-labelledby="form-title">
+                    <p class="panel-label">FORM KOMPONEN</p>
+                    <h2 id="form-title">Tambah tugas</h2>
+                    <form class="task-form">
+                        <label for="taskInput">Nama tugas</label>
+                        <input id="taskInput" type="text" placeholder="Tulis tugas baru..." maxlength="100" disabled>
+                        <button type="button" disabled>Tambah tugas</button>
+                    </form>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            <span>5025251205</span>
+            <span>I Made Saskara Bawa</span>
+        </footer>
+    </div>
+</body>
+</html>
