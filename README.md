@@ -36,3 +36,5 @@ todo-saskara/
 ## Catatan
 
 Proyek ini dibuat untuk tugas Pemrograman Web dan fokus pada penerapan interaksi frontend dengan JavaScript secara langsung.
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/376422f9-4153-4c45-a9c0-96976b9ded5a" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b002730d-0860-46d8-ae66-4aedfe3a418b" />
