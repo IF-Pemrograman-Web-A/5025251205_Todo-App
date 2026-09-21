@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
     <div class="app-shell">
         <header class="app-header">
             <div>
@@ -17,7 +17,10 @@
                 <h1 id="app-title">TODO SASKARA</h1>
                 <p class="subtitle">Satu langkah kecil untuk hari yang lebih terarah.</p>
             </div>
-            <div class="date-badge" aria-label="Tanggal aplikasi">14 SEP 2026</div>
+            <div class="header-actions">
+                <div class="date-badge" aria-label="Tanggal aplikasi">14 SEP 2026</div>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">🌙 Dark</button>
+            </div>
         </header>
 
         <div class="content-layout">
@@ -27,41 +30,28 @@
                         <p class="panel-label">DAFTAR UTAMA</p>
                         <h2 id="list-title">Tugas hari ini</h2>
                     </div>
-                    <span>3 tugas</span>
+                    <span id="taskCount">3 tugas</span>
                 </div>
 
-                <ul class="task-list">
-                    <li class="task-item">
-                        <input class="task-check" type="checkbox" id="task-one">
-                        <label class="task-text" for="task-one">Menyelesaikan tugas Pemrograman Web</label>
-                    </li>
-                    <li class="task-item">
-                        <input class="task-check" type="checkbox" id="task-two" checked>
-                        <label class="task-text" for="task-two">Merapikan catatan perkuliahan</label>
-                    </li>
-                    <li class="task-item">
-                        <input class="task-check" type="checkbox" id="task-three">
-                        <label class="task-text" for="task-three">Membaca materi untuk besok</label>
-                    </li>
-                </ul>
+                <ul id="taskList" class="task-list" aria-live="polite"></ul>
             </main>
 
             <aside class="side-panel" aria-label="Panel detail dan tambah tugas">
                 <section class="detail-card">
                     <p class="panel-label">TASK DETAILS</p>
-                    <h2>Menyelesaikan tugas Pemrograman Web</h2>
-                    <p><strong>Status:</strong> In progress</p>
-                    <p><strong>Due:</strong> Today</p>
-                    <p class="detail-description">Menyusun halaman Todo List dengan HTML semantic dan CSS eksternal.</p>
+                    <h2 id="detailTitle">Menyelesaikan tugas Pemrograman Web</h2>
+                    <p><strong>Status:</strong> <span id="detailStatus">In progress</span></p>
+                    <p><strong>Due:</strong> <span id="detailDue">Today</span></p>
+                    <p class="detail-description" id="detailDescription">Menyusun halaman Todo List dengan HTML semantic dan CSS eksternal.</p>
                 </section>
 
                 <section class="form-card" aria-labelledby="form-title">
                     <p class="panel-label">FORM KOMPONEN</p>
                     <h2 id="form-title">Tambah tugas</h2>
-                    <form class="task-form">
+                    <form id="taskForm" class="task-form">
                         <label for="taskInput">Nama tugas</label>
-                        <input id="taskInput" type="text" placeholder="Tulis tugas baru..." maxlength="100" disabled>
-                        <button type="button" disabled>Tambah tugas</button>
+                        <input id="taskInput" type="text" placeholder="Tulis tugas baru..." maxlength="100">
+                        <button type="submit">Tambah tugas</button>
                     </form>
                 </section>
             </aside>
@@ -72,5 +62,7 @@
             <span>I Made Saskara Bawa</span>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
