@@ -43,7 +43,6 @@
                     <p><strong>Status:</strong> <span id="detailStatus">In progress</span></p>
                     <p><strong>Due:</strong> <span id="detailDue">Today</span></p>
                     <p class="detail-description" id="detailDescription">Menyusun halaman Todo List dengan HTML semantic dan CSS eksternal.</p>
-                    <div id="detailImageWrap" class="detail-image-wrap" aria-live="polite"></div>
                 </section>
 
                 <section class="form-card" aria-labelledby="form-title">
@@ -52,15 +51,6 @@
                     <form id="taskForm" class="task-form">
                         <label for="taskInput">Nama tugas</label>
                         <input id="taskInput" type="text" placeholder="Tulis tugas baru..." maxlength="100">
-
-                        <label for="taskNotification">Waktu notifikasi</label>
-                        <input id="taskNotification" type="time">
-
-                        <label for="taskImageInput">Foto tugas</label>
-                        <input id="taskImageInput" type="file" accept="image/*" capture="environment">
-                        <img id="taskImagePreview" class="task-preview hidden" alt="Preview foto tugas">
-                        <button id="clearImageBtn" class="secondary-btn" type="button">Hapus foto</button>
-
                         <button type="submit">Tambah tugas</button>
                     </form>
                 </section>
