@@ -39,3 +39,9 @@ Semua browser yang terhubung ke database yang sama dapat melihat dan mengelola t
 
 - Nama: I Made Saskara Bawa
 - NRP: 5025251205
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/ff617112-dfbe-4454-a23a-b2592b65f521" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/b8a2a1f2-49a2-4a83-b3cf-aba8faa7b0b5" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/052423ca-a99d-418e-8ac4-955952c76445" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/6fb85159-370d-4ed1-acef-02313d115a65" />
+
