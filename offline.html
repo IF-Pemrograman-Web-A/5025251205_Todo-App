@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17231d">
+    <meta name="description" content="Kelola catatan tugas lokal saat Todo Saskara sedang offline.">
+    <title>Mode Offline - TODO SASKARA</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icons/icon-192.png" type="image/png">
+    <link rel="stylesheet" href="offline.css">
+</head>
+<body>
+    <main class="offline-app">
+        <header class="offline-header">
+            <a class="offline-brand" href="./offline.html">
+                <span class="offline-mark" aria-hidden="true">T</span>
+                <span>
+                    <strong>TODO SASKARA</strong>
+                    <small>MODE OFFLINE</small>
+                </span>
+            </a>
+            <button id="installApp" class="install-button" type="button" hidden>Pasang aplikasi</button>
+        </header>
+
+        <section class="offline-intro">
+            <p class="eyebrow">RUANG PRIBADI LOKAL</p>
+            <h1>Tetap produktif, meski offline.</h1>
+            <p id="connectionStatus" role="status">Memeriksa koneksi...</p>
+            <p class="offline-note">Tugas pada halaman ini disimpan di browser perangkat ini. Tugas offline tidak otomatis tersinkron ke database Personal/Shared.</p>
+        </section>
+
+        <section class="offline-card" aria-labelledby="offline-list-title">
+            <div class="list-heading">
+                <div>
+                    <p class="panel-label">TERSIMPAN DI PERANGKAT</p>
+                    <h2 id="offline-list-title">Tugas offline</h2>
+                </div>
+                <span id="taskCount">0 tugas</span>
+            </div>
+            <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+            <form id="taskForm" class="task-form">
+                <label for="taskTitle">Nama tugas</label>
+                <input id="taskTitle" name="title" type="text" maxlength="160" placeholder="Tulis tugas baru..." required>
+                <label for="taskDescription">Catatan (opsional)</label>
+                <textarea id="taskDescription" name="description" maxlength="1000" rows="3" placeholder="Tambahkan detail..."></textarea>
+                <button class="primary-button" type="submit">Simpan di perangkat</button>
+            </form>
+            <p id="saveStatus" class="save-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <footer class="offline-footer">
+            <a id="onlineAppLink" href="./index.php?view=personal">Buka kembali Todo App online</a>
+            <span>Offline Personal — perangkat ini saja</span>
+        </footer>
+    </main>
+    <script src="offline.js"></script>
+    <script src="pwa.js"></script>
+</body>
+</html>

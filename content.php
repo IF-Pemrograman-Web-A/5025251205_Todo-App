@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#17231d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title><?= $view === 'shared' ? 'Shared tasks' : 'Personal tasks' ?> - TODO SASKARA</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -31,6 +35,7 @@
                         <button type="submit" class="profile-save">Simpan</button>
                     </form>
                     <button id="enableNotifications" class="notifications-toggle" type="button">Aktifkan pengingat</button>
+                    <button id="installApp" class="install-button" type="button" hidden>Pasang aplikasi</button>
                     <button id="themeToggle" class="theme-toggle" type="button" aria-label="Ganti ke mode gelap">🌙</button>
                 </div>
             </header>
@@ -153,5 +158,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="pwa.js"></script>
 </body>
 </html>

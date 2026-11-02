@@ -255,6 +255,15 @@ body::before {
     white-space: nowrap;
 }
 
+.install-button {
+    padding: 8px 11px;
+    border-radius: 8px;
+    color: var(--button-text);
+    background: var(--accent);
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
 .eyebrow,
 .panel-label {
     margin: 0 0 14px;

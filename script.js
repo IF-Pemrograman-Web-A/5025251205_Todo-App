@@ -88,9 +88,3 @@ document.querySelectorAll('form[data-confirm]').forEach((form) => {
     }
   });
 });
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').catch((error) => {
-    console.error('Service worker gagal didaftarkan:', error);
-  });
-}
