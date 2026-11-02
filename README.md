@@ -57,10 +57,6 @@ Pengujian lokal pada 2 November 2026:
 
 Untuk mengulang pengujian di Chrome/Edge: buka **DevTools → Application** untuk memeriksa Manifest dan Service Workers, pastikan aset ada pada **Cache Storage → todo-saskara-v8**, lalu di **Network** aktifkan **Offline** dan muat ulang aplikasi. Setelah selesai, matikan **Offline** lagi. CRUD offline di halaman ini hanya membuktikan penyimpanan lokal, bukan sinkronisasi ke database.
 
-## Catatan kolaborasi
-
-Semua browser yang terhubung ke database yang sama dapat melihat dan mengelola tugas Shared. Personal menggunakan identitas sesi PHP, bukan sistem akun. Untuk penggunaan organisasi sungguhan, tambahkan autentikasi dan kontrol akses akun; jangan mengekspos database server langsung ke internet.
-
 ## Identitas
 
 - Nama: I Made Saskara Bawa
